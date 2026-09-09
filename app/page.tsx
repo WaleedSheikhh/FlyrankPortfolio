@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ContactForm from "./contactform";
 
 export default function Home() {
   const linkStyle: React.CSSProperties = {
@@ -51,7 +52,7 @@ export default function Home() {
           GitHub
         </a>
         <a
-          href="https://drive.google.com/file/d/1qKyK-hMhU2ZYC3evlkpTlalulWn6J1Fg/view?usp=drive_link"
+          href="https://docs.google.com/document/d/1foZIvfit21w-Wg0YENg3Ut2nkEwEx75bQp1wVtR3MHw/edit?tab=t.0"
           style={linkStyle}
           target="_blank"
         >
