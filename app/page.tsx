@@ -1,11 +1,12 @@
-import Image from "next/image";
 import ContactForm from "./contactform";
 
 export default function Home() {
   const linkStyle: React.CSSProperties = {
-    color: "#0074FF",
+    color: "#005FCC",
     textDecoration: "none",
     fontWeight: 600,
+    padding: "0.4rem 0.2rem",
+    display: "inline-block",
   };
 
   return (
@@ -16,8 +17,7 @@ export default function Home() {
         color: "#2A2A2A",
         background: "#FBFBFB",
         minHeight: "100vh",
-        maxWidth: "640px",
-        margin: "0 auto",
+        width: "100%",
       }}
     >
       <h1 style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>
@@ -45,30 +45,30 @@ export default function Home() {
           borderRadius: "8px",
         }}
       >
-        <a href="https://www.linkedin.com/in/muhammad-waleed-sh/" style={linkStyle} target="_blank">
+        <a href="https://www.linkedin.com/in/muhammad-waleed-sh/" style={linkStyle} target="_blank" rel="noopener noreferrer">
           LinkedIn
         </a>
-        <a href="https://github.com/WaleedSheikhh" style={linkStyle} target="_blank">
+        <a href="https://github.com/WaleedSheikhh" style={linkStyle} target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
         <a
           href="https://docs.google.com/document/d/1foZIvfit21w-Wg0YENg3Ut2nkEwEx75bQp1wVtR3MHw/edit?tab=t.0"
           style={linkStyle}
           target="_blank"
+          rel="noopener noreferrer"
         >
           CV
         </a>
-        <a href="mailto:sheikhhh.waleed@gmail.com" style={linkStyle}>
+        <a href="mailto:sheikhhh.waleed@gmail.com" style={linkStyle} target="_blank" rel="noopener noreferrer">
           Email me
         </a>
       </div>
 
       <ContactForm />
- 
+
       <p style={{ marginTop: "3rem", fontSize: "0.95rem", color: "#2A2A2A" }}>
         More case studies and capstone work coming soon.
       </p>
-
     </main>
   );
 }
