@@ -63,9 +63,12 @@ export default function Home() {
         </a>
       </div>
 
+      <ContactForm />
+ 
       <p style={{ marginTop: "3rem", fontSize: "0.95rem", color: "#2A2A2A" }}>
         More case studies and capstone work coming soon.
       </p>
+
     </main>
   );
 }
