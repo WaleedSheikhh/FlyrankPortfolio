@@ -1,4 +1,5 @@
 import ContactForm from "./contactform";
+import WorkSection from "./WorkSection";
 
 export default function Home() {
   const linkStyle: React.CSSProperties = {
@@ -63,6 +64,58 @@ export default function Home() {
           Email me
         </a>
       </div>
+
+      {/* Work section */}
+      <section style={{ marginTop: "3.5rem" }}>
+          <h2 style={{ fontSize: "1.4rem", marginBottom: "1.5rem" }}>Work</h2>
+ 
+          <article
+            style={{
+              border: "1px solid #F4F9FF",
+              borderRadius: "8px",
+              padding: "1.5rem",
+              marginBottom: "1.5rem",
+            }}
+          >
+            <h3 style={{ fontSize: "1.15rem", marginBottom: "0.75rem" }}>
+              Task API — Backend Basics, Done Right
+            </h3>
+ 
+            <p style={{ fontWeight: 600, marginBottom: "0.25rem" }}>The problem</p>
+            <p style={{ lineHeight: 1.6, marginBottom: "0.75rem" }}>
+              I needed to actually understand CRUD, not just recognize the word —
+              build it myself, from nothing, and know I could explain every line.
+            </p>
+ 
+            <p style={{ fontWeight: 600, marginBottom: "0.25rem" }}>What I did</p>
+            <p style={{ lineHeight: 1.6, marginBottom: "0.75rem" }}>
+              Built a task API in FastAPI with full CRUD, then moved it from
+              in-memory storage to SQLite, then to Postgres running in Docker —
+              proving the API itself never had to change, only the storage
+              underneath it. Added Supabase authentication with protected routes,
+              and an LLM enrichment endpoint with schema validation, retries, a
+              cost log, and a kill switch.
+            </p>
+ 
+            <p style={{ fontWeight: 600, marginBottom: "0.25rem" }}>What came of it</p>
+            <p style={{ lineHeight: 1.6, marginBottom: "1rem" }}>
+              A real, working backend system — CRUD, a persistent database,
+              authentication, and AI integration, running in Docker with correct
+              status codes, validation, and error handling throughout.
+            </p>
+ 
+            <a
+              href="https://github.com/WaleedSheikhh/FlyrankInternship"
+              style={{ ...linkStyle, padding: 0 }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View the code →
+            </a>
+          </article>
+        </section>
+ 
+        <WorkSection />
 
       <ContactForm />
 
