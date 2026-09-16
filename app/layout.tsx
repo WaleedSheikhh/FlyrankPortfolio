@@ -15,6 +15,18 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Waleed Sheikh",
   description: "Backend AI Engineering — accuracy and reliability first.",
+  openGraph: {
+    title: "Waleed Sheikh — Backend AI Engineering",
+    description: "I build things that survive restarts, bad input, and real use — then show you exactly how.",
+    url: "https://waleed-be.vercel.app",
+    siteName: "Waleed Sheikh",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Waleed Sheikh — Backend AI Engineering",
+    description: "I build things that survive restarts, bad input, and real use — then show you exactly how.",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
