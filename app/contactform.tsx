@@ -11,7 +11,7 @@ export default function ContactForm() {
 
     const form = e.currentTarget;
     const formData = new FormData(form);
-    formData.append("access_key", "c3616dcc-c30a-4c55-a5dd-55e2bbbf76ea");
+    formData.append("access_key", "YOUR_WEB3FORMS_ACCESS_KEY");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -59,7 +59,7 @@ export default function ContactForm() {
             type="submit"
             disabled={status === "sending"}
             style={{
-              background: "#0074FF",
+              background: "#005FCC",
               color: "#FBFBFB",
               padding: "0.6rem 1.2rem",
               border: "none",
